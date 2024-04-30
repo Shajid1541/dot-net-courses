@@ -2,6 +2,41 @@
 {
     internal class Program
     {
+        public class nonPrimitive
+        {
+            public enum ShippingMethod
+            {
+                Regular = 1,
+                Express = 2
+            }
+
+            public static void enumTest()
+            {
+                var method = ShippingMethod.Regular;
+                Console.WriteLine("Normal enum "+method);
+                var methodname = method.ToString();
+                Console.WriteLine("Enums name "+  methodname);
+                var methodid = (int)method;
+                Console.WriteLine(methodid);
+
+            }
+            public static void numsintoString(int[] numbers)
+            {
+                string list = string.Join(", ", numbers);
+                Console.WriteLine(list);
+
+            }
+            public static void numsVerbatim(int[] numbers)
+            {
+                string s = @$"
+                            {numbers[0]}
+                            {numbers[1]}
+                            {numbers[2]}";
+                Console.WriteLine(s);
+            }
+
+           
+        }
         static void Main(string[] args)
         {
             int number = 0;
@@ -27,6 +62,13 @@
             catch (Exception){
                 Console.WriteLine("Can't conver to byte!");
             }
+
+            var nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+            nonPrimitive.numsintoString(nums);
+            nonPrimitive.numsVerbatim(nums);
+            nonPrimitive.enumTest();
+
+
         }
     }
 }
