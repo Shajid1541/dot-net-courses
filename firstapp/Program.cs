@@ -8,6 +8,7 @@
 
 
             Console.WriteLine("Hello, World!"+number);
+            Console.WriteLine("{0} {1}",int.MaxValue, int.MinValue);
         }
     }
 }
