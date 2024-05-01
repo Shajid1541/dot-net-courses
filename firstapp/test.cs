@@ -37,7 +37,7 @@ namespace firstapp
                 string s = @$"
                             {numbers[0]}
                             {numbers[1]}
-                            {numbers[2]}";
+                            {numbers[numbers.Length-1]}";
                 Console.WriteLine(s);
             }
 
