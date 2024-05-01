@@ -42,6 +42,9 @@ namespace firstapp
             string ss = "ashdkjh a ajshd kjashd sdh ajshdkj hsd  jhakjz dhkjahsd kja ahsd lkas";
             string sss = stringUt.summary(ss, 30);
             Console.WriteLine(sss);
+            /*stringUt.consecutive();
+            stringUt.duplicate();*/
+            dateEx.validtime();
 
 
         }
