@@ -11,8 +11,8 @@ namespace firstapp
             int number = 0;
 
 
-            Console.WriteLine("Hello, World!"+number);
-            Console.WriteLine("{0} {1}",int.MaxValue, int.MinValue);
+            Console.WriteLine("Hello, World!" + number);
+            Console.WriteLine("{0} {1}", int.MaxValue, int.MinValue);
             int i = 666666666;
             byte j = (byte)i;
             Console.WriteLine("{0} {1}", i, j);
@@ -28,10 +28,17 @@ namespace firstapp
                 byte b = Convert.ToByte(num);
                 Console.WriteLine(b);
             }
-            catch (Exception){
+            catch (Exception)
+            {
                 Console.WriteLine("Can't conver to byte!");
             }
 
+            callsForExamples();
+
+        }
+
+        private static void callsForExamples()
+        {
             var nums = new int[] { 1, 2, 3, 4, 5, 6, 7, 8 };
             nonPrimitive.numsintoString(nums);
             nonPrimitive.numsVerbatim(nums);
@@ -45,8 +52,6 @@ namespace firstapp
             /*stringUt.consecutive();
             stringUt.duplicate();*/
             dateEx.validtime();
-
-
         }
     }
 }
