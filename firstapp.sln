@@ -5,7 +5,12 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "firstapp", "firstapp\firstapp.csproj", "{6592F964-7652-4314-B015-ED0D96DAD69F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsEx", "GenericsEx\GenericsEx.csproj", "{D4B765EE-608F-4DE5-80FF-05C88FFE712C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsEx", "GenericsEx\GenericsEx.csproj", "{D4B765EE-608F-4DE5-80FF-05C88FFE712C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF9A180B-4DE9-49C8-A118-B0D7E9353BF0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
